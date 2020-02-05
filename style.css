@@ -1,0 +1,471 @@
+
+html, body {
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+h3 {
+    
+    font-size: 3vh;
+    font-family: 'Raleway';
+    font-weight: normal;
+}
+
+hr {
+    position: relative;
+    color: #777;
+    background-color: white;
+    opacity: 0.5;
+    width: 80%;
+}
+
+div.homeNav {
+    display: block;
+    position: absolute;
+    height: 8%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-color: rgba(220,220,220,0.0);
+    border-style: solid;
+    border-width: 0px;
+    border-color: black;
+    text-align: center;
+}
+
+.homeNav #iconImg {
+    width: 150px;
+    height: 30px;
+}
+
+/* NAVIGATION LOGO */
+
+.homeNav button {
+    float: left;
+    margin: 2%;
+    margin-top: 30px;
+    background: none;
+    border: none;
+}
+
+.homeNav button p {
+    display: inline-block;
+    margin-top: 0;
+    font-family: 'Roboto';
+    font-weight: bolder;
+    color: white;
+}
+
+.homeNav button i {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* NAVIGATION BAR */
+
+.homeNav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+    /* margin-right: 100px; */
+    margin-right: 2%;
+    overflow: hidden;
+    float: right;
+}
+
+.homeNav li {
+    float: left;
+}
+
+.homeNav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    margin: 30px 16px;
+    text-decoration: none;
+    font-family: 'Bebas Neue';
+    font-size: 2.5vh;
+    /* font-weight: bold; */
+    opacity: 0.7;
+
+    transition-duration: 0.2s;
+}
+
+.homeNav li a:hover {
+    transition-duration: 0.2s;
+    opacity: 1;
+}
+
+/* NAVIGATION ICON */
+
+.homeNav .menuIcon {
+    position: relative;
+    display:none;
+    cursor: pointer;
+    float: right;
+    margin: 3%;
+    margin-right: 7%;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+
+/* Body */
+
+.mainBody {
+    position: static;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.homepageContent {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    background-color: teal;
+    z-index: -1;
+}
+
+.homepageContent #homepageBlurb {
+    max-width: 20%;
+    max-height: 40%;
+    background-color: white;
+
+    position: absolute;
+    top: 8%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+
+    border: 0px solid black;
+
+    outline-style: solid;
+    outline-offset: 60px;
+    outline-color: white;
+    outline-width: 50px;
+}
+
+
+.homepageContent #homepageBlurb p {
+    margin: 0;
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: 'Raleway';
+    font-weight: light;
+    font-size: 22px;
+    /* font-size: 1em; */
+    font-size: 1.8vh;
+}
+
+.homepageContent #homepageImage {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Responsive layout */
+
+@media screen and (max-width: 1380px) {
+
+    .homeNav li a {
+        font-size: 2vh;
+        margin: 30px 12px;
+    }
+
+    .homepageContent #homepageBlurb {
+        max-width: 28%;
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+
+    .homeNav li a {
+        margin: 30px 5px;
+    }
+  }
+
+@media screen and (max-width: 895px) {
+
+    .homeNav ul {
+        display: none;
+    }
+
+    .homeNav .menuIcon {
+        display: inline-block;
+    }
+
+    .homepageContent #homepageBlurb p {
+        font-size: 1.5vh;
+    }
+  }
+
+  @media screen and (max-width: 680px) {
+
+    .homepageContent #homepageBlurb {
+        max-width: 50%;
+        max-height: 40%;
+
+        outline-offset: 30px;
+        outline-color: white;
+        outline-width: 30px;
+    }
+
+    .homepageContent #homepageBlurb p {
+        font-size: 1.5vh;
+    }
+  }
+
+p.MainParagraphs {
+    color: blue;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+/* Content */
+
+.content {
+    display: block;
+    width: 70%;
+    height: 500%;
+    padding: 0% 15%;
+    background-color: #f8f8f8;
+
+    /* border: 2px solid black; */
+}
+
+/* About */
+.content #about-container {
+    display: block;
+    width: 100%;
+    height: 90vh;
+
+    background-color:white;
+
+    font-size: 0;
+}
+
+.content #about-container #about-container-img {
+    display:inline-block;
+    position: static;
+    width: 20%;
+    height: 100%;
+    /* background-color: violet; */
+}
+
+.content #about-container img {
+    display:block;
+    max-width: 100%;
+    width: auto;
+    height: auto\9;
+    margin-top: 20vh;
+    margin-left: 4%;
+}
+
+.content #about-container #about-container-blurb {
+    display:inline-block;
+    vertical-align: top;
+    width: 55%;
+    height: 100%;
+
+    /* background-color: yellowgreen; */
+}
+
+.content #about-container #about-container-blurb h3 {
+    margin-top: 25vh;
+    margin-left: 5%;
+}
+
+.content #about-container #about-container-blurb p {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    margin-top: 0%;
+    margin-left: 5%;
+
+    color: #777;
+
+    font-size: 1.8vh;
+    font-family: "Raleway"
+}
+
+
+.content #about-container #about-container-languages {
+    display:inline-block;
+    vertical-align: top;
+    width: 25%;
+    height: 100%;
+}
+
+.content #about-container #about-container-languages h3 {
+    margin-top: 25vh;
+    margin-left: 15%;
+}
+
+.content #about-container #about-container-languages i {
+    /* max-width: 50%;
+    width: auto;
+    height: auto\9; */
+    margin: 10% 20%;
+}
+
+/* Resume */
+.content #resume-container {
+    display: block;
+    width: 100%;
+    height: 100vh;
+
+    background-color: white;
+}
+
+.content #resume-container #resume-downloads {
+    float: right;
+    margin: 0;
+    margin-top: 10%;
+    padding-right: 20%
+}
+
+.content #resume-container #resume-downloads a {
+    display: block;
+    margin-top: 8%;
+
+    font-family: 'Raleway';
+    font-size: 1.8vh;
+}
+
+.content #resume-container #resume-screen-container {
+    position: inline-block;
+    position: absolute;
+    width: 28%;
+    height: 75%;
+
+    margin-left: 9.5%;
+    margin-top: 6.5%;
+}
+
+.content #resume-container #resume-screen {
+    position: absolute;
+    width: 98%;
+    height: 98%;
+
+    background-color: rgba(220,220,220, 1);
+
+    text-align: center;
+
+    opacity: 0;
+    transition-duration: 0.2s;
+}
+
+.content #resume-container #resume-screen p {
+    font-size: 3vh;
+    background-color: white;
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content #resume-container #resume-screen:hover {
+    width: 100%;
+    height: 100%;
+
+    opacity: 0.5;
+    transition-duration: 0.2s;
+}
+
+.content #resume-container #resume-page-1 {
+    width: 98%;
+    height: 98%;
+
+    border: 1px solid rgba(220,220,220,0.5);
+    box-shadow: -10px 10px 5px grey;
+    
+    transition-duration: 0.2s;
+}
+
+.content #resume-container #resume-overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.content #resume-container #resume-pdf {
+    width: 40%;
+    height: 90%;
+    padding-top: 2.5%;
+    padding-left: 30%;
+}
+
+/* Projects */
+.content #projects-container {
+    display: block;
+    width: 100%;
+    height: 100vh;
+
+    background-color: green;
+}
+
+/* Gallery */
+.content #gallery-container {
+    display: block;
+    width: 100%;
+    height: 100vh;
+
+    background-color: yellowgreen;
+}
+
+/* Contact */
+.content #contact-container {
+    display: block;
+    width: 100%;
+    height: 100vh;
+
+    background-color: yellow;
+}
+
+
+
+
