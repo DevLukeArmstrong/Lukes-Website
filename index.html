@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="An interactive CV">
+    <meta name="keywords" content="HTML, CSS, XML, JavaScript, Luke Armstrong, Computer Scientist">
+    <meta name="author" content="Luke Armstrong">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Luke's World</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="homeNav">
+
+        <button>
+            <img id="iconImg" src="Images/RocketIcon_white_final.png" alt="oopsies">
+        </button>
+
+        <ul>
+            <li><a href="#about-container">About</a></li>
+            <li><a href="#resume-container">Resume</a></li>
+            <li><a href="#projects-container">Projects</a></li>
+            <li><a href="#gallery-container">Gallery</a></li>
+            <li><a href="#contact-container">Contact</a></li>
+        </ul>
+
+        <div class="menuIcon" onclick="menuIconAnimate(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </div>
+
+    <div class="homepageContent">
+        <img id="homepageImage" src="Images/Black_and_white.jpg" alt="Koi and the Goose">
+        <div id="homepageBlurb">
+            <p>My name is Luke - I'm passionate, curious and enthusiastic individual who is always looking
+             to dive into exciting challenges and new surroundings.
+              I’m interested in full stack development, backend development,
+               mobile development, UX design and web development.
+                I’m currently in search for a long-term software development
+                 role in a company with a vibrant culture.</p>
+        </div>
+    </div>
+
+    <!-- Content -->
+
+    <div class="content">
+
+            <!-- About Page -->
+        <div id="about-container">
+            <div id="about-container-img">
+                <img id="profile-pic" src="Images/Profile_Pic.png" alt="A picture of yours truely">
+            </div>
+            <div id="about-container-blurb">
+                <h3>ABOUT</h3>
+
+                <p class="content-p">My name is Luke - I'm passionate, curious and enthusiastic individual who is always looking
+                    to dive into exciting challenges and new surroundings.
+                    <br><br>
+                     I’m interested in full stack development, backend development,
+                      mobile development, UX design and web development.
+                    <br><br>
+                       I’m currently in search for a long-term software development
+                        role in a company with a vibrant culture.</p>
+
+                <p class="content-p">My name is Luke - I'm passionate, curious and enthusiastic individual who is always looking
+                    to dive into exciting challenges and new surroundings.
+                    <br><br>
+                     I’m interested in full stack development, backend development,
+                      mobile development, UX design and web development.
+                       I’m currently in search for a long-term software development
+                        role in a company with a vibrant culture.</p>
+            </div>
+            <div id="about-container-languages">
+                <h3>LANGUAGES</h3>
+                <i class="material-icons">cloud</i>
+                <i class="material-icons">cloud</i>
+                <i class="material-icons">cloud</i>
+                <i class="material-icons">cloud</i>
+                <i class="material-icons">cloud</i>
+                <i class="material-icons">cloud</i>
+                <i class="material-icons">cloud</i>
+                <i class="material-icons">cloud</i>
+                <i class="material-icons">cloud</i>
+                <i class="material-icons">cloud</i>
+            </div>
+            <hr>
+        </div>
+
+
+        <!-- Resume Page -->
+        <div id="resume-container">
+
+            <div id="resume-screen-container">
+                <div onmouseover="increaseResume('resume-page-1')" onmouseout="decreaseResume('resume-page-1')" onclick="overlayOn('resume-overlay')"  id="resume-screen">
+                    <p>Click to view</p>
+                </div>
+                <img id="resume-page-1" src="Images/Resume_page_1.jpg">
+            </div>
+
+            <div id="resume-downloads">
+                <h3>RESUME</h3>
+                <a href="Documents/Luke_Armstrong_Resume.pdf" download="Luke_Armstrong_Resume">PDF Document (.pdf)</a>
+                <a href="Documents/Luke_Armstrong_Resume.docx" download="Luke_Armstrong_Resume">Microsoft Word (.docx)</a>
+                <a href="Documents/Luke_Armstrong_Resume.odt" download="Luke_Armstrong_Resume">OpenDocument Format (.odt)</a>
+                <a href="Documents/Luke_Armstrong_Resume.rtf" download="Luke_Armstrong_Resume">Rich Text Format (.rtf)</a>
+                <a href="Documents/Luke_Armstrong_Resume.txt" download="Luke_Armstrong_Resume">Plain Text (.txt)</a>
+            </div>
+
+            <div id="resume-overlay" onclick="overlayOff(this.id)">
+                <embed type="application/pdf" id="resume-pdf" src="Documents/Resume.pdf#view=FitH" />
+            </div>
+        </div>
+
+        <div id="projects-container">
+            <h2>PROJECTS</h2>
+
+            <div class="project-container" onClick="window.open('https://github.com/DevLukeArmstrong/Lukes-Website', '_blank');">
+                <img src="Images/RocketIcon_Icon.png">
+                <p>This website. Made with HTML5, CSS, JS & Love.
+                    This website. Made with HTML5, CSS, JS & Love.
+                    This website. Made with HTML5, CSS, JS & Love. </p>
+            </div>
+
+            <div class="project-container" onClick="window.open('https://github.com/DevLukeArmstrong/Lukes-Website', '_blank');">
+                <img src="Images/RocketIcon_Icon.png">
+                <p>This website. Made with HTML5, CSS, JS & Love.
+                    This website. Made with HTML5, CSS, JS & Love.
+                    This website. Made with HTML5, CSS, JS & Love. </p>
+            </div>
+
+            <div class="project-container" onClick="window.open('https://github.com/DevLukeArmstrong/Lukes-Website', '_blank');">
+                <img src="Images/RocketIcon_Icon.png">
+                <p>This website. Made with HTML5, CSS, JS & Love.
+                    This website. Made with HTML5, CSS, JS & Love.
+                    This website. Made with HTML5, CSS, JS & Love. </p>
+            </div>
+
+            <div class="project-container" onClick="window.open('https://github.com/DevLukeArmstrong/Lukes-Website', '_blank');">
+                <img src="Images/RocketIcon_Icon.png">
+                <p>This website. Made with HTML5, CSS, JS & Love.
+                    This website. Made with HTML5, CSS, JS & Love.
+                    This website. Made with HTML5, CSS, JS & Love. </p>
+            </div>
+
+            <div class="project-container" onClick="window.open('https://github.com/DevLukeArmstrong/Lukes-Website', '_blank');">
+                <img src="Images/RocketIcon_Icon.png">
+                <p>This website. Made with HTML5, CSS, JS & Love.
+                    This website. Made with HTML5, CSS, JS & Love.
+                    This website. Made with HTML5, CSS, JS & Love. </p>
+            </div>
+
+            <div class="project-container" onClick="window.open('https://github.com/DevLukeArmstrong/Lukes-Website', '_blank');">
+                <img src="Images/RocketIcon_Icon.png">
+                <p>This website. Made with HTML5, CSS, JS & Love.
+                    This website. Made with HTML5, CSS, JS & Love.
+                    This website. Made with HTML5, CSS, JS & Love. </p>
+            </div>
+            <hr>
+        </div>
+
+        <div id="gallery-container">
+            <div class="top-gallery-container">
+
+                <div id="gallery-slides">
+                    <img src="Images/Gallery/Vietnam-1/IMG_0254.jpg" class="slider-img">
+
+                    <img src="Images/Gallery/Vietnam-1/IMG_1244.jpg" class="slider-img">
+
+                    <img src="Images/Gallery/Vietnam-2-animals/IMG_0060.jpg" class="slider-img">
+
+                    <img src="Images/Gallery/Vietnam-2-animals/IMG_0196.jpg" class="slider-img">
+
+                    <img src="Images/Gallery/Vietnam-3-views/IMG_0525.jpg" class="slider-img">
+
+                    <img src="Images/Gallery/Vietnam-3-views/IMG_0686.jpg" class="slider-img">
+
+                    <img src="Images/Gallery/Vietnam-3-views/IMG_0956.jpg" class="slider-img">
+                </div>
+
+                <div class="dots-container">
+                    <div class="slider-dot" id="dot-0" onclick="showImage(0)"></div>
+                    <div class="slider-dot" id="dot-1" onclick="showImage(1)"></div>
+                    <div class="slider-dot" id="dot-2" onclick="showImage(2)"></div>
+                    <div class="slider-dot" id="dot-3" onclick="showImage(3)"></div>
+                    <div class="slider-dot" id="dot-4" onclick="showImage(4)"></div>
+                    <div class="slider-dot" id="dot-5" onclick="showImage(5)"></div>
+                    <div class="slider-dot" id="dot-6" onclick="showImage(6)"></div>
+                </div>
+
+                
+                <!-- Next and previous buttons -->
+                <a class="gallery-prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="gallery-next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+        </div>
+
+        <div id="contact-container">
+            
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
