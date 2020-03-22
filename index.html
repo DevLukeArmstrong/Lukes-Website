@@ -195,17 +195,28 @@
                     <div class="slider-dot" id="dot-5" onclick="showImage(5)"></div>
                     <div class="slider-dot" id="dot-6" onclick="showImage(6)"></div>
                 </div>
-
-                
-                <!-- Next and previous buttons -->
-                <a class="gallery-prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="gallery-next" onclick="plusSlides(1)">&#10095;</a>
             </div>
 
         </div>
 
         <div id="contact-container">
-            
+            <div id="info">
+                <h2>CONTACT</h2>
+            </div>
+            <div id="form">
+                <form action="mail.php" method="POST">
+                    <div id="left-col">
+                        <input type="text" name="name" id="name" placeholder="NAME">
+                        <input type="text" name="email" id="email" placeholder="EMAIL">
+                    </div>
+                    <div id="right-col">
+                        <textarea name="message" id="message" placeholder="MESSAGE"></textarea>
+                    </div>
+                    <div id="info-bottom">
+                        <input type="submit" id="submit" value="SEND MESSAGE">
+                    </div>
+                </form>
+            </div>
         </div>
 
     </div>
